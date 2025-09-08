@@ -7,89 +7,89 @@ export default function Home() {
       <main className="bg-[#0A0A0F] text-white">
         <RightNav /> {/* убери это, если решишь оставить свой inline <nav> */}
 
-      {/* ================= HERO ================= */}
-      <section className="relative h-screen flex flex-col items-center justify-center text-center px-6">
-        <div className="max-w-6xl mx-auto space-y-6">
-          <h1 className="font-inter text-5xl md:text-7xl font-extrabold tracking-wide text-red-600">
-            Survive Media
-          </h1>
+        {/* ================= HERO ================= */}
+        <section className="relative h-screen flex flex-col items-center justify-center text-center px-6">
+          <div className="max-w-6xl mx-auto space-y-6">
+            <h1 className="font-inter text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-wide text-red-600">
+              Survive Media
+            </h1>
 
-          <p className="font-inter text-xl md:text-2xl text-gray-300">
-            Выбери нас, чтобы выжить!
-          </p>
+            <p className="font-inter text-xl sm:text-lg md:text-2xl text-gray-300">
+              Выбери нас, чтобы выжить!
+            </p>
 
-          {/* Метрики */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <div className="w-52 rounded-xl bg-[#0F0F15] ring-1 ring-white/5 px-6 py-4 text-center">
-              <p className="text-3xl font-extrabold text-red-500">800k+</p>
-              <p className="text-gray-400 text-sm leading-snug">подписчиков</p>
-            </div>
-            <div className="w-52 rounded-xl bg-[#0F0F15] ring-1 ring-white/5 px-6 py-4 text-center">
-              <p className="text-3xl font-extrabold text-purple-400">600k+</p>
-              <p className="text-gray-400 text-sm leading-snug">просмотров в месяц</p>
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="flex gap-4 justify-center pt-2">
-            <a
-              href="mailto:ads@survivemedia.ru"
-              className="w-48 h-12 inline-flex items-center justify-center rounded-xl bg-red-600 hover:bg-red-700 transition font-medium"
-            >
-              Рекламодателям
-            </a>
-            <a
-              href="mailto:partners@survivemedia.ru"
-              className="w-48 h-12 inline-flex items-center justify-center rounded-xl bg-purple-600 hover:bg-purple-700 transition font-medium"
-            >
-              Инфлюенсерам
-            </a>
-          </div>
-        </div>
-
-        {/* Кнопка «вниз» */}
-        <div className="absolute bottom-12">
-          <a href="#channels" aria-label="К списку каналов">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-14 w-14 text-red-500 hover:text-red-600 transition animate-pulse-bounce"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </a>
-        </div>
-      </section>
-
-      {/* ================= КАНАЛЫ ================= */}
-<section id="channels" className="pt-20 pb-12 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center">Наши каналы</h2>
-
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
-            {/* Fazbears Times */}
-            <a
-              href="https://www.youtube.com/@FazbearsTimes"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block w-full rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 text-center transition hover:-translate-y-1 hover:ring-white/10"
-            >
-              <img
-                src="/avatars/fazbearstimes.jpg"
-                alt="Fazbears Times"
-                className="w-24 h-24 mx-auto rounded-full mb-4 border-2 border-[#ff0000] select-none"
-                draggable="false"
-              />
-              <h3 className="text-lg font-bold mb-2">Fazbears Times</h3>
-              <p className="text-xl font-bold text-gray-200 mb-4">765.200+ подписчиков</p>
-              <div className="space-y-1 text-sm text-gray-400">
-                <p>📺 YouTube: <span className="text-gray-200 font-medium">220.000</span></p>
-                <p>🎵 TikTok: <span className="text-gray-200 font-medium">542.000</span></p>
-                <p>✈ Telegram: <span className="text-gray-200 font-medium">3.200</span></p>
+            {/* Метрики */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <div className="w-44 sm:w-52 md:w-52 rounded-xl bg-[#0F0F15] ring-1 ring-white/5 px-6 py-4 text-center">
+                <p className="text-2xl sm:text-3xl font-extrabold text-red-500">800k+</p>
+                <p className="text-gray-400 text-sm leading-snug">подписчиков</p>
               </div>
+              <div className="w-44 sm:w-52 md:w-52 rounded-xl bg-[#0F0F15] ring-1 ring-white/5 px-6 py-4 text-center">
+                <p className="text-2xl sm:text-3xl font-extrabold text-purple-400">600k+</p>
+                <p className="text-gray-400 text-sm leading-snug">просмотров в месяц</p>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+              <a
+                href="mailto:ads@survivemedia.ru"
+                className="w-40 sm:w-48 h-12 inline-flex items-center justify-center rounded-xl bg-red-600 hover:bg-red-700 transition font-medium"
+              >
+                Рекламодателям
+              </a>
+              <a
+                href="mailto:partners@survivemedia.ru"
+                className="w-40 sm:w-48 h-12 inline-flex items-center justify-center rounded-xl bg-purple-600 hover:bg-purple-700 transition font-medium"
+              >
+                Инфлюенсерам
+              </a>
+            </div>
+          </div>
+
+          {/* Кнопка «вниз» */}
+          <div className="absolute bottom-12">
+            <a href="#channels" aria-label="К списку каналов">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-14 w-14 text-red-500 hover:text-red-600 transition animate-pulse-bounce"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </a>
+          </div>
+        </section>
+
+        {/* ================= КАНАЛЫ ================= */}
+        <section id="channels" className="pt-20 pb-12 px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center">Наши каналы</h2>
+
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+              {/* Каналы (например, Fazbears Times) */}
+              <a
+                href="https://www.youtube.com/@FazbearsTimes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block w-full sm:w-[360px] md:w-full rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 text-center transition hover:-translate-y-1 hover:ring-white/10"
+              >
+                <img
+                  src="/avatars/fazbearstimes.jpg"
+                  alt="Fazbears Times"
+                  className="w-24 h-24 mx-auto rounded-full mb-4 border-2 border-[#ff0000] select-none"
+                  draggable="false"
+                />
+                <h3 className="text-lg font-bold mb-2">Fazbears Times</h3>
+                <p className="text-xl font-bold text-gray-200 mb-4">765.200+ подписчиков</p>
+                <div className="space-y-1 text-sm text-gray-400">
+                  <p>📺 YouTube: <span className="text-gray-200 font-medium">220.000</span></p>
+                  <p>🎵 TikTok: <span className="text-gray-200 font-medium">542.000</span></p>
+                  <p>✈ Telegram: <span className="text-gray-200 font-medium">3.200</span></p>
+                </div>
+              </a>
 
             {/* DimaJazDD */}
             <a
@@ -265,34 +265,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= ПАКЕТЫ ================= */}
-<section id="packages" className="pt-12 pb-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center">Пакеты размещения</h2>
-          <p className="text-center text-gray-400 mt-3">
-            Гибкие условия без фиксированных цен на сайте — отправим прайс и медиакит после заявки.
-          </p>
+{/* ================= ПАКЕТЫ ================= */}
+        <section id="packages" className="pt-12 pb-16 px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center">Пакеты размещения</h2>
+            <p className="text-center text-gray-400 mt-3">
+              Гибкие условия без фиксированных цен на сайте — отправим прайс и медиакит после заявки.
+            </p>
 
-          {/* Карточки пакетов */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
-            {/* Start */}
-            <article className="flex flex-col h-full rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 hover:ring-white/10 transition">
-              <header className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-bold">🟢 Start (Базовый)</h3>
-                <span className="px-3 py-1 text-xs rounded-full bg-green-600/15 text-green-300 ring-1 ring-green-500/30">
-                  Тест-драйв
-                </span>
-              </header>
-              <ul className="space-y-2.5 text-[15px] text-gray-300">
-                <li className="flex gap-3 items-start"><span className="mt-1.5 h-2 w-2 rounded-full bg-green-500" />Подписчики каналов: <span className="text-gray-200">3k–20k</span></li>
-                <li className="flex gap-3 items-start"><span className="mt-1.5 h-2 w-2 rounded-full bg-green-500" />Состав: <span className="text-gray-200">2–3 канала</span></li>
-                <li className="flex gap-3 items-start"><span className="mt-1.5 h-2 w-2 rounded-full bg-green-500" />Охват: <span className="text-gray-200">~20k–80k</span></li>
-                <li className="flex gap-3 items-start"><span className="mt-1.5 h-2 w-2 rounded-full bg-green-500" />Форматы: <span className="text-gray-200">упоминания/интеграции, Telegram</span></li>
-              </ul>
-              <a href="mailto:ads@survivemedia.ru" className="mt-auto h-12 inline-flex items-center justify-center rounded-xl bg-green-900 hover:bg-green-700 transition font-medium">
-                Запросить предложение
-              </a>
-            </article>
+            {/* Карточки пакетов */}
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+              {/* Start */}
+              <article className="flex flex-col h-full rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 hover:ring-white/10 transition">
+                <header className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold">🟢 Start (Базовый)</h3>
+                  <span className="px-3 py-1 text-xs rounded-full bg-green-600/15 text-green-300 ring-1 ring-green-500/30">
+                    Тест-драйв
+                  </span>
+                </header>
+                <ul className="space-y-2.5 text-[15px] text-gray-300">
+                  <li className="flex gap-3 items-start"><span className="mt-1.5 h-2 w-2 rounded-full bg-green-500" />Подписчики каналов: <span className="text-gray-200">3k–20k</span></li>
+                  <li className="flex gap-3 items-start"><span className="mt-1.5 h-2 w-2 rounded-full bg-green-500" />Состав: <span className="text-gray-200">2–3 канала</span></li>
+                  <li className="flex gap-3 items-start"><span className="mt-1.5 h-2 w-2 rounded-full bg-green-500" />Охват: <span className="text-gray-200">~20k–80k</span></li>
+                  <li className="flex gap-3 items-start"><span className="mt-1.5 h-2 w-2 rounded-full bg-green-500" />Форматы: <span className="text-gray-200">упоминания/интеграции, Telegram</span></li>
+                </ul>
+                <a href="mailto:ads@survivemedia.ru" className="mt-auto h-12 inline-flex items-center justify-center rounded-xl bg-green-900 hover:bg-green-700 transition font-medium">
+                  Запросить предложение
+                </a>
+              </article>
 
             {/* Boost */}
             <article className="flex flex-col h-full rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 hover:ring-white/10 transition">
@@ -422,103 +422,101 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/* ============== КОНТАКТЫ (без форм) ============== */}
-<section id="contact" className="pt-12 pb-20 px-6 bg-[#0A0A0F]">
-  <div className="max-w-5xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold text-center">
-      Оставить заявку
-    </h2>
-    <p className="text-center text-gray-400 mt-3">
-      Свяжитесь с нами напрямую — ответим и вышлем медиакит.
-    </p>
+        {/* ================= КОНТАКТЫ ================= */}
+        <section id="contact" className="pt-12 pb-20 px-6 bg-[#0A0A0F]">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center">
+              Оставить заявку
+            </h2>
+            <p className="text-center text-gray-400 mt-3">
+              Свяжитесь с нами напрямую — ответим и вышлем медиакит.
+            </p>
 
-    <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-      {/* Рекламодателям */}
-      <div className="rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 flex flex-col justify-between">
-        <header className="flex items-center justify-between mb-4">
-          <h3 className="text-xl font-bold">Рекламодателям</h3>
-          <span className="px-3 py-1 text-xs rounded-full bg-red-600/20 text-red-300 ring-1 ring-red-500/30">
-            Ads
-          </span>
-        </header>
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {/* Рекламодателям */}
+              <div className="rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 flex flex-col justify-between">
+                <header className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold">Рекламодателям</h3>
+                  <span className="px-3 py-1 text-xs rounded-full bg-red-600/20 text-red-300 ring-1 ring-red-500/30">
+                    Ads
+                  </span>
+                </header>
 
-        <div className="text-sm text-gray-300 space-y-2 mb-6">
-          <p>
-            email:{" "}
-            <a
-              href="mailto:ads@survivemedia.ru"
-              className="underline decoration-white/20 hover:decoration-white"
-            >
-              ads@survivemedia.ru
-            </a>
-          </p>
-          <p>
-            tg:{" "}
-            <a
-              href="https://t.me/JJKenn9dy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-white/20 hover:decoration-white"
-            >
-              @JJKenn9dy
-            </a>
-          </p>
-        </div>
+                <div className="text-sm text-gray-300 space-y-2 mb-6">
+                  <p>
+                    email:{" "}
+                    <a
+                      href="mailto:ads@survivemedia.ru"
+                      className="underline decoration-white/20 hover:decoration-white"
+                    >
+                      ads@survivemedia.ru
+                    </a>
+                  </p>
+                  <p>
+                    tg:{" "}
+                    <a
+                      href="https://t.me/JJKenn9dy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-white/20 hover:decoration-white"
+                    >
+                      @JJKenn9dy
+                    </a>
+                  </p>
+                </div>
 
-        <a
-          href="mailto:ads@survivemedia.ru"
-          className="w-full h-12 flex items-center justify-center rounded-xl bg-red-600 hover:bg-red-700 transition font-medium"
-        >
-          Отправить заявку
-        </a>
-      </div>
+                <a
+                  href="mailto:ads@survivemedia.ru"
+                  className="w-full h-12 flex items-center justify-center rounded-xl bg-red-600 hover:bg-red-700 transition font-medium"
+                >
+                  Отправить заявку
+                </a>
+              </div>
 
-      {/* Инфлюенсерам */}
-      <div className="rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 flex flex-col justify-between">
-        <header className="flex items-center justify-between mb-4">
-          <h3 className="text-xl font-bold">Инфлюенсерам</h3>
-          <span className="px-3 py-1 text-xs rounded-full bg-purple-600/20 text-purple-300 ring-1 ring-purple-500/30">
-            Partners
-          </span>
-        </header>
+              {/* Инфлюенсерам */}
+              <div className="rounded-2xl bg-[#0F0F15] ring-1 ring-white/5 p-6 flex flex-col justify-between">
+                <header className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold">Инфлюенсерам</h3>
+                  <span className="px-3 py-1 text-xs rounded-full bg-purple-600/20 text-purple-300 ring-1 ring-purple-500/30">
+                    Partners
+                  </span>
+                </header>
 
-        <div className="text-sm text-gray-300 space-y-2 mb-6">
-          <p>
-            email:{" "}
-            <a
-              href="mailto:partners@survivemedia.ru"
-              className="underline decoration-white/20 hover:decoration-white"
-            >
-              partners@survivemedia.ru
-            </a>
-          </p>
-          <p>
-            tg:{" "}
-            <a
-              href="https://t.me/JJKenn9dy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-white/20 hover:decoration-white"
-            >
-              @JJKenn9dy
-            </a>
-          </p>
-        </div>
+                <div className="text-sm text-gray-300 space-y-2 mb-6">
+                  <p>
+                    email:{" "}
+                    <a
+                      href="mailto:partners@survivemedia.ru"
+                      className="underline decoration-white/20 hover:decoration-white"
+                    >
+                      partners@survivemedia.ru
+                    </a>
+                  </p>
+                  <p>
+                    tg:{" "}
+                    <a
+                      href="https://t.me/JJKenn9dy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-white/20 hover:decoration-white"
+                    >
+                      @JJKenn9dy
+                    </a>
+                  </p>
+                </div>
 
-        <a
-          href="mailto:partners@survivemedia.ru"
-          className="w-full h-12 flex items-center justify-center rounded-xl bg-purple-600 hover:bg-purple-700 transition font-medium"
-        >
-          Отправить заявку
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+                <a
+                  href="mailto:partners@survivemedia.ru"
+                  className="w-full h-12 flex items-center justify-center rounded-xl bg-purple-600 hover:bg-purple-700 transition font-medium"
+                >
+                  Отправить заявку
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-
-
-    </main>
-  </>
+      </main>
+    </>
   );
 }
