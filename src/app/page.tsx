@@ -240,7 +240,7 @@ export default function Home() {
             </a>
 
             {/* Nocom — центр по ряду */}
-            <div className="md:col-span-full flex justify-center">
+            <div className="md:col-span-full flex justify-right">
               <a
                 href="https://www.youtube.com/@NOCOMofficial01"
                 target="_blank"
