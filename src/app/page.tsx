@@ -238,7 +238,7 @@ export default function Home() {
                 <p>✈ Telegram: <span className="text-gray-200 font-medium">100</span></p>
               </div>
             </a>
-            {/* Nocom — центр по ряду */}
+            {/* Nocom — центр по ряду*/}
             <div className="md:col-span-full flex justify-right">
               <a
                 href="https://www.youtube.com/@NOCOMofficial01"
