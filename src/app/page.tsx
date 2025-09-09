@@ -21,7 +21,7 @@ export default function Home() {
             {/* Метрики */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <div className="w-44 sm:w-52 md:w-52 rounded-xl bg-[#0F0F15] ring-1 ring-white/5 px-6 py-4 text-center">
-                <p className="text-2xl sm:text-3xl font-extrabold text-red-500">800k+</p>
+                <p className="text-2xl sm:text-3xl font-extrabold text-red-500">1.500.000+</p>
                 <p className="text-gray-400 text-sm leading-snug">подписчиков</p>
               </div>
               <div className="w-44 sm:w-52 md:w-52 rounded-xl bg-[#0F0F15] ring-1 ring-white/5 px-6 py-4 text-center">
